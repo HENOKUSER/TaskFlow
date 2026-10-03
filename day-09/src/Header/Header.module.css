@@ -1,0 +1,22 @@
+.header {
+  padding: 1.5rem 1rem;
+  text-align: center;
+  color: #ffffff;
+  background: linear-gradient(135deg, #4f46e5, #7c3aed);
+}
+
+.title {
+  margin: 0;
+  font-size: 1.75rem;
+  letter-spacing: 0.02em;
+}
+
+@media (min-width: 768px) {
+  .header {
+    padding: 2.25rem 1.5rem;
+  }
+
+  .title {
+    font-size: 2.25rem;
+  }
+}

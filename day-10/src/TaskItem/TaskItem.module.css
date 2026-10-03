@@ -1,0 +1,80 @@
+.item {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.5rem 0.75rem;
+  padding: 0.9rem 1rem;
+  background: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+}
+
+.title {
+  flex: 1 1 100%;
+  font-weight: 600;
+  overflow-wrap: anywhere;
+}
+
+.titleDone {
+  color: var(--color-muted);
+  text-decoration: line-through;
+}
+
+.badge {
+  padding: 0.2rem 0.6rem;
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: var(--color-success);
+  background: rgba(22, 163, 74, 0.12);
+  border-radius: 999px;
+}
+
+.actions {
+  display: flex;
+  gap: 0.5rem;
+  margin-left: auto;
+}
+
+.button {
+  min-height: 40px;
+  padding: 0.4rem 0.9rem;
+  font-size: 0.9rem;
+  font-weight: 600;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background 0.15s, color 0.15s;
+}
+
+.toggleButton {
+  color: var(--color-primary);
+  background: transparent;
+  border: 1px solid var(--color-primary);
+}
+
+.toggleButton:hover {
+  color: #ffffff;
+  background: var(--color-primary);
+}
+
+.deleteButton {
+  color: var(--color-danger);
+  background: transparent;
+  border: 1px solid var(--color-danger);
+}
+
+.deleteButton:hover {
+  color: #ffffff;
+  background: var(--color-danger);
+}
+
+@media (min-width: 480px) {
+  .title {
+    flex: 1 1 0;
+    min-width: 0;
+  }
+
+  .actions {
+    margin-left: 0;
+  }
+}
